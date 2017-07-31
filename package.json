@@ -10,7 +10,7 @@
   "scripts": {
     "heroku-postbuild": "npm run build",
     "dev": "cross-env NODE_ENV=development PORT=5000 nodemon --config nodemon.json --watch server --exec babel-node server/index.js",
-    "start": "cross-env PORT=5000 & DEBUG=server:app babel-node server/index.js",
+    "start": "cross-env PORT=5000 & babel-node server/index.js",
     "build": "webpack --progress --hide-modules"
   },
   "dependencies": {
@@ -21,8 +21,7 @@
     "cross-env": "^5.0.1",
     "express": "^4.15.3",
     "stylus": "^0.54.5",
-    "vue": "^2.4.2",
-    "webpack": "^3.4.1"
+    "vue": "^2.4.2"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
