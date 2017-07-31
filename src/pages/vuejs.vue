@@ -1,7 +1,9 @@
 <template>
   <div>
-		VUEJS
-	</div>
+    <p>
+      VUEJS
+    </p>    
+  </div>
 </template>
 
 <script>
